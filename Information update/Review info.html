@@ -1,0 +1,135 @@
+<!-- Review Information HTML Template -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information Update - Review Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #0078d4;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            margin: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .actions {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .actions button {
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .actions button:hover {
+            background-color: #005a9e;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <h1>Review Information</h1>
+    </header>
+
+    <main>
+        <section>
+            <h3>Employee Details</h3>
+            <table>
+                <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Employee ID</td>
+                    <td>{{employeeId}}</td>
+                </tr>
+                <tr>
+                    <td>Full Name</td>
+                    <td>{{employeeName}}</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>{{dateOfBirth}}</td>
+                </tr>
+                <tr>
+                    <td>Email Address</td>
+                    <td>{{email}}</td>
+                </tr>
+                <tr>
+                    <td>Contact Number</td>
+                    <td>{{contactNumber}}</td>
+                </tr>
+                <tr>
+                    <td>Department</td>
+                    <td>{{department}}</td>
+                </tr>
+                <tr>
+                    <td>Job Title</td>
+                    <td>{{jobTitle}}</td>
+                </tr>
+                <tr>
+                    <td>Home Address</td>
+                    <td>{{homeAddress}}</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="actions">
+            <form action="/submit-review-info" method="POST">
+                <button type="submit" name="action" value="approve">Approve</button>
+                <button type="submit" name="action" value="reject">Request Changes</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Employee Self-Service Platform</p>
+    </footer>
+</body>
+</html>

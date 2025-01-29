@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Performance Assessment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input[type="text"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .signature-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .action-buttons {
+            text-align: center;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Final Performance Assessment</h1>
+    </header>
+
+    <main>
+        <!-- Section 1: Employee Information -->
+        <section>
+            <h2>Employee Information</h2>
+            <div class="form-group">
+                <label for="employeeName">Employee Name</label>
+                <input type="text" id="employeeName" name="employeeName" placeholder="Enter employee name" disabled>
+            </div>
+            <div class="form-group">
+                <label for="employeeId">Employee ID</label>
+                <input type="text" id="employeeId" name="employeeId" placeholder="Enter employee ID" disabled>
+            </div>
+            <div class="form-group">
+                <label for="jobTitle">Job Title</label>
+                <input type="text" id="jobTitle" name="jobTitle" placeholder="Enter job title" disabled>
+            </div>
+            <div class="form-group">
+                <label for="department">Department</label>
+                <input type="text" id="department" name="department" placeholder="Enter department" disabled>
+            </div>
+        </section>
+
+        <!-- Section 2: Finalize Assessment -->
+        <section>
+            <h2>Finalize Assessment</h2>
+            <div class="form-group">
+                <label for="assessmentDate">Assessment Date</label>
+                <input type="date" id="assessmentDate" name="assessmentDate">
+            </div>
+            <div class="form-group">
+                <label for="assessmentResults">Assessment Results</label>
+                <textarea id="assessmentResults" name="assessmentResults" rows="4" placeholder="Enter assessment results"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="finalAssessmentNotes">Final Assessment Notes</label>
+                <textarea id="finalAssessmentNotes" name="finalAssessmentNotes" rows="4" placeholder="Enter any final assessment notes"></textarea>
+            </div>
+        </section>
+
+        <!-- Section 3: Evaluate Final Performance -->
+        <section>
+            <h2>Evaluate Final Performance</h2>
+            <div class="form-group">
+                <label for="finalPerformanceEvaluation">Final Performance Evaluation</label>
+                <textarea id="finalPerformanceEvaluation" name="finalPerformanceEvaluation" rows="4" placeholder="Enter final performance evaluation results"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="strengths">Strengths</label>
+                <textarea id="strengths" name="strengths" rows="4" placeholder="Enter identified strengths"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="areasForImprovement">Areas for Improvement</label>
+                <textarea id="areasForImprovement" name="areasForImprovement" rows="4" placeholder="Enter identified areas for improvement"></textarea>
+            </div>
+        </section>
+
+        <!-- Section 4: Approve Final Performance -->
+        <section>
+            <h2>Approve Final Performance</h2>
+            <div class="form-group">
+                <label for="supervisorFinalApproval">Supervisor Approval</label>
+                <div class="signature-box">
+                    <input type="text" id="supervisorFinalApproval" name="supervisorFinalApproval" placeholder="Supervisor's signature">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="finalApprovalDate">Date</label>
+                <input type="date" id="finalApprovalDate" name="finalApprovalDate">
+            </div>
+        </section>
+
+        <!-- Section 5: Notify Final Assessment -->
+        <section>
+            <h2>Notify Final Assessment</h2>
+            <div class="form-group">
+                <label for="finalNotificationDate">Notification Date</label>
+                <input type="date" id="finalNotificationDate" name="finalNotificationDate">
+            </div>
+            <div class="form-group">
+                <label for="finalNotificationMethod">Notification Method</label>
+                <input type="text" id="finalNotificationMethod" name="finalNotificationMethod" placeholder="Enter notification method (e.g., email, meeting)">
+            </div>
+        </section>
+
+        <!-- Section 6: Update Performance Records -->
+        <section>
+            <h2>Update Performance Records</h2>
+            <div class="form-group">
+                <label for="performanceRecordUpdate">Performance Record Update</label>
+                <textarea id="performanceRecordUpdate" name="performanceRecordUpdate" rows="4" placeholder="Enter update details for the performance record"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="newPerformanceRating">New Performance Rating</label>
+                <input type="text" id="newPerformanceRating" name="newPerformanceRating" placeholder="Enter new performance rating (e.g., 1-5)">
+            </div>
+        </section>
+
+        <!-- Submit Button -->
+        <div class="action-buttons">
+            <button type="submit">Save and Submit Final Performance Assessment</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Performance Feedback System</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: blue; /* Change the heading color to blue */
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        .form-section h3 {
+            margin-bottom: 10px;
+        }
+        .form-section label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-section select, .form-section input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-section button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-section button:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Capture Information</h1>
+    <form id="benefit-form">
+        <div class="form-section">
+            <h2>Personal Information</h2>
+            <label for="employee-id">Employee ID:</label>
+            <input type="text" id="employee-id" name="employeeId" required>
+            
+            <label for="employee-name">Employee Name:</label>
+            <input type="text" id="employee-name" name="employeeName" required>
+            
+            <label for="employee-email">Email:</label>
+            <input type="email" id="employee-email" name="employeeEmail" required>
+            
+            <label for="employee-dob">Date of Birth:</label>
+            <input type="date" id="employee-dob" name="employeeDob" required>
+            
+            <label for="employee-contact">Contact Number:</label>
+            <input type="tel" id="employee-contact" name="employeeContact" required>
+
+            <label for="employee-gender">Gender:</label>
+            <select id="employee-gender" name="employeeGender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-section">
+            <h2>Benefit Package Selection<h2>
+            <h3>Health Insurance</h3>
+            <label for="health-insurance">Choose a plan:</label>
+            <select id="health-insurance" name="healthInsurance">
+                <option value="basic">Basic Plan</option>
+                <option value="premium">Premium Plan</option>
+                <option value="family">Family Plan</option>
+            </select>
+        </div>
+
+        <div class="form-section">
+            <h3>Retirement Plans</h3>
+            <label for="retirement-plan">Choose a plan:</label>
+            <select id="retirement-plan" name="retirementPlan">
+                <option value="401k">401(k)</option>
+                <option value="pension">Pension Scheme</option>
+                <option value="none">None</option>
+            </select>
+        </div>
+
+        <div class="form-section">
+            <h3>Paid Time Off</h3>
+            <label for="pto">Choose your preference:</label>
+            <select id="pto" name="pto">
+                <option value="standard">Standard Package</option>
+                <option value="extended">Extended Package</option>
+            </select>
+        </div>
+
+        <div class="form-section">
+            <h3>Additional Perks</h3>
+            <label for="perks">Select perks:</label>
+            <select id="perks" name="perks" multiple>
+                <option value="flex-hours">Flexible Hours</option>
+                <option value="remote-work">Remote Work</option>
+                <option value="professional-dev">Professional Development</option>
+                <option value="child-care">Child Care Assistance</option>
+            </select>
+        </div>
+
+        <div class="form-section">
+            <h3>Working Time Management</h3>
+            <label for="time-management">Select a service:</label>
+            <select id="time-management" name="timeManagement">
+                <option value="project-management">Project Management Tools</option>
+                <option value="time-tracking">Time Tracking Software</option>
+                <option value="calendar-sync">Calendar Synchronization</option>
+            </select>
+        </div>
+
+        <div class="form-section">
+            <h3>Other Services</h3>
+            <label for="other-services">Choose additional services:</label>
+            <select id="other-services" name="otherServices" multiple>
+                <option value="legal-aid">Legal Aid</option>
+                <option value="financial-advisory">Financial Advisory</option>
+                <option value="mental-health">Mental Health Support</option>
+                <option value="fitness-programs">Fitness Programs</option>
+            </select>
+            <label for="employee-experience">Years of Experience:</label>
+            <input type="number" id="employee-experience" name="employeeExperience" min="0" required>
+
+
+        </div>
+
+        <div class="form-section hidden" id="dependent-info-section">
+            <h3>Dependent Information</h3>
+            <label for="dependent-name">Full Name:</label>
+            <input type="text" id="dependent-name" name="dependentName">
+            
+            <label for="dependent-dob">Date of Birth:</label>
+            <input type="date" id="dependent-dob" name="dependentDob">
+            
+            <label for="dependent-relationship">Relationship to Employee:</label>
+            <select id="dependent-relationship" name="dependentRelationship">
+                <option value="spouse">Spouse</option>
+                <option value="child">Child</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="dependent-address">Address:</label>
+            <input type="text" id="dependent-address" name="dependentAddress">
+            
+            <label for="dependent-phone">Phone Number:</label>
+            <input type="tel" id="dependent-phone" name="dependentPhone">
+            
+            <label for="dependent-ssn">Social Security Number:</label>
+            <input type="text" id="dependent-ssn" name="dependentSsn">
+            
+            <label for="dependent-documents">Identification Documents:</label>
+            <input type="file" id="dependent-documents" name="dependentDocuments" multiple>
+             <label for="approve-enrollment">
+            <h2>Approve Enrollment</h2>
+            <input type="checkbox"  name="approveEnrollment" required>
+                Approve Enrollment. </label>
+            
+
+        </div>
+
+        <div class="form-section hidden" id="ineligibility-message">
+            <p>You are not eligible for dependent enrollment as your experience is less than 2 years.</p>
+            <p>Go back to home page</p>
+        </div>
+
+        
+        <div class="form-section">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <script>
+        document.getElementById('employee-experience').addEventListener('input', function() {
+            const experience = parseInt(this.value, 10);
+            const dependentInfoSection = document.getElementById('dependent-info-section');
+            const ineligibilityMessage = document.getElementById('ineligibility-message');
+
+            if (experience >= 2) {
+                dependentInfoSection.classList.remove('hidden');
+                ineligibilityMessage.classList.add('hidden');
+            } else {
+                dependentInfoSection.classList.add('hidden');
+                ineligibilityMessage.classList.remove('hidden');
+            }
+        });
+
+        document.getElementById('benefit-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+            console.log('Form Data Submitted:', data);
+            alert('Benefit package selection submitted!');
+
+            // Redirect to review page with form data as query parameters
+            const reviewUrl = "review.html?" + new URLSearchParams(data).toString();
+            window.location.href = reviewUrl;  // Redirect to the review page
+        });
+    </script>
+</body>
+</html>

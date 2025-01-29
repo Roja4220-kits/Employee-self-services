@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            background: white;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 0.5rem;
+        }
+        label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Review Data</h1>
+    </header>
+    <main>
+        <form>
+            <section>
+                <h2>Employee Information</h2>
+                <label for="employee-name">Employee Name:</label>
+                <input type="text" id="employee-name" name="employee-name">
+
+                <label for="employee-id">Employee ID:</label>
+                <input type="text" id="employee-id" name="employee-id">
+
+                <label for="job-title">Job Title:</label>
+                <input type="text" id="job-title" name="job-title">
+
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department">
+            </section>
+
+            <section>
+                <h2>Time Entry Validation</h2>
+                <label for="validation-date">Validation Date:</label>
+                <input type="date" id="validation-date" name="validation-date">
+
+                <label for="validated-by">Validated By:</label>
+                <input type="text" id="validated-by" name="validated-by">
+            </section>
+
+            <section>
+                <h2>Identified Discrepancies</h2>
+                <label for="discrepancy-type">Discrepancy Type:</label>
+                <input type="text" id="discrepancy-type" name="discrepancy-type">
+
+                <label for="discrepancy-description">Discrepancy Description:</label>
+                <textarea id="discrepancy-description" name="discrepancy-description"></textarea>
+            </section>
+
+            <section>
+                <h2>Corrective Action</h2>
+                <label for="action-assigned">Action Assigned:</label>
+                <input type="text" id="action-assigned" name="action-assigned">
+
+                <label for="action-date">Action Assigned Date:</label>
+                <input type="date" id="action-date" name="action-date">
+
+                <label for="responsible-person">Responsible Person:</label>
+                <input type="text" id="responsible-person" name="responsible-person">
+            </section>
+
+            <section>
+                <h2>Approved Corrections</h2>
+                <label for="approval-date">Approval Date:</label>
+                <input type="date" id="approval-date" name="approval-date">
+
+                <label for="approved-by">Approved By:</label>
+                <input type="text" id="approved-by" name="approved-by">
+            </section>
+
+            <section>
+                <h2>Notify Payroll</h2>
+                <label for="notification-date">Notification Date:</label>
+                <input type="date" id="notification-date" name="notification-date">
+
+                <label for="notification-method">Notification Method:</label>
+                <input type="text" id="notification-method" name="notification-method">
+            </section>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

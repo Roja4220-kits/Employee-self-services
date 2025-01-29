@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Discussion and Training</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .signature-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .action-buttons {
+            text-align: center;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Feedback Discussion and Training</h1>
+    </header>
+
+    <main>
+        <!-- Section 1: Employee Information -->
+        <section>
+            <h2>Employee Information</h2>
+            <div class="form-group">
+                <label for="employeeName">Employee Name</label>
+                <input type="text" id="employeeName" name="employeeName" placeholder="Enter employee name" disabled>
+            </div>
+            <div class="form-group">
+                <label for="employeeId">Employee ID</label>
+                <input type="text" id="employeeId" name="employeeId" placeholder="Enter employee ID" disabled>
+            </div>
+            <div class="form-group">
+                <label for="jobTitle">Job Title</label>
+                <input type="text" id="jobTitle" name="jobTitle" placeholder="Enter job title" disabled>
+            </div>
+            <div class="form-group">
+                <label for="department">Department</label>
+                <input type="text" id="department" name="department" placeholder="Enter department" disabled>
+            </div>
+        </section>
+
+        <!-- Section 2: Determine Training Needs -->
+        <section>
+            <h2>Determine Training Needs</h2>
+            <div class="form-group">
+                <label for="trainingNeeds">Training Needs Assessment</label>
+                <textarea id="trainingNeeds" name="trainingNeeds" rows="4" placeholder="Enter training needs assessment results"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="skillsGap">Skills Gap</label>
+                <textarea id="skillsGap" name="skillsGap" rows="4" placeholder="Enter identified skills gap"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="developmentGoals">Development Goals</label>
+                <textarea id="developmentGoals" name="developmentGoals" rows="4" placeholder="Enter employee development goals"></textarea>
+            </div>
+        </section>
+
+        <!-- Section 3: Approve Training Plan -->
+        <section>
+            <h2>Approve Training Plan</h2>
+            <div class="form-group">
+                <label for="trainingPlan">Training Plan</label>
+                <textarea id="trainingPlan" name="trainingPlan" rows="4" placeholder="Enter training plan details"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="trainingObjectives">Training Objectives</label>
+                <textarea id="trainingObjectives" name="trainingObjectives" rows="4" placeholder="Enter training objectives"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="supervisorApproval">Supervisor Approval</label>
+                <div class="signature-box">
+                    <input type="text" id="supervisorApproval" name="supervisorApproval" placeholder="Supervisor's signature">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="approvalDate">Date</label>
+                <input type="date" id="approvalDate" name="approvalDate">
+            </div>
+        </section>
+
+        <!-- Section 4: Notify Training Plan -->
+        <section>
+            <h2>Notify Training Plan</h2>
+            <div class="form-group">
+                <label for="notificationDate">Notification Date</label>
+                <input type="date" id="notificationDate" name="notificationDate">
+            </div>
+            <div class="form-group">
+                <label for="notificationMethod">Notification Method</label>
+                <input type="text" id="notificationMethod" name="notificationMethod" placeholder="Enter method of notification (e.g., email, meeting)">
+            </div>
+        </section>
+
+        <!-- Section 5: Enroll in Training -->
+        <section>
+            <h2>Enroll in Training</h2>
+            <div class="form-group">
+                <label for="trainingCourse">Training Course</label>
+                <input type="text" id="trainingCourse" name="trainingCourse" placeholder="Enter training course name">
+            </div>
+            <div class="form-group">
+                <label for="trainingProvider">Training Provider</label>
+                <input type="text" id="trainingProvider" name="trainingProvider" placeholder="Enter training provider name">
+            </div>
+            <div class="form-group">
+                <label for="trainingDates">Training Dates</label>
+                <input type="text" id="trainingDates" name="trainingDates" placeholder="Enter training dates">
+            </div>
+            <div class="form-group">
+                <label for="enrollmentStatus">Enrollment Status</label>
+                <select id="enrollmentStatus" name="enrollmentStatus">
+                    <option value="enrolled">Enrolled</option>
+                    <option value="notEnrolled">Not Enrolled</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Section 6: Schedule Feedback Discussion -->
+        <section>
+            <h2>Schedule Feedback Discussion</h2>
+            <div class="form-group">
+                <label for="discussionSchedule">Discussion Schedule</label>
+                <input type="date" id="discussionSchedule" name="discussionSchedule">
+            </div>
+            <div class="form-group">
+                <label for="feedbackMechanism">Feedback Mechanism</label>
+                <textarea id="feedbackMechanism" name="feedbackMechanism" rows="4" placeholder="Enter feedback mechanism details (e.g., 360 feedback, one-on-one meeting)"></textarea>
+            </div>
+        </section>
+
+        <!-- Submit Button -->
+        <div class="action-buttons">
+            <button type="submit">Save and Submit Feedback & Training Details</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Performance Feedback System</p>
+    </footer>
+
+</body>
+</html>

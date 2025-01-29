@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            display: block;
+            margin: 5px 0 10px;
+            padding: 8px;
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <h1>Capture Information</h1>
+
+    <div class="section">
+        <h2>Employee Information</h2>
+        <label for="employee-name">Employee Name:</label>
+        <input type="text" id="employee-name" name="employee-name" placeholder="Enter employee name">
+
+        <label for="employee-id">Employee ID:</label>
+        <input type="text" id="employee-id" name="employee-id" placeholder="Enter employee ID">
+
+        <label for="job-title">Job Title:</label>
+        <input type="text" id="job-title" name="job-title" placeholder="Enter job title">
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" placeholder="Enter department">
+    </div>
+
+    <div class="section">
+        <h2>Validate Employee Eligibility</h2>
+        <label for="eligibility-status">Eligibility Status:</label>
+        <select id="eligibility-status" name="eligibility-status">
+            <option value="eligible">Eligible</option>
+            <option value="not-eligible">Not Eligible</option>
+        </select>
+
+        <label for="eligibility-reason">Reason:</label>
+        <textarea id="eligibility-reason" name="eligibility-reason" placeholder="Enter reason for eligibility status"></textarea>
+    </div>
+
+    <div class="section">
+        <h2>Manager Approval</h2>
+        <label for="manager-name">Manager Name:</label>
+        <input type="text" id="manager-name" name="manager-name" placeholder="Enter manager name">
+
+        <label for="approval-status">Approval Status:</label>
+        <select id="approval-status" name="approval-status">
+            <option value="approved">Approved</option>
+            <option value="not-approved">Not Approved</option>
+        </select>
+
+        <label for="approval-date">Date:</label>
+        <input type="date" id="approval-date" name="approval-date">
+    </div>
+
+    <div class="section">
+        <h2>Training Budget Check</h2>
+        <label for="budget-availability">Budget Availability:</label>
+        <select id="budget-availability" name="budget-availability">
+            <option value="available">Available</option>
+            <option value="not-available">Not Available</option>
+        </select>
+
+        <label for="budget-amount">Budget Amount:</label>
+        <input type="number" id="budget-amount" name="budget-amount" placeholder="Enter budget amount">
+    </div>
+
+    <div class="section">
+        <h2>Training Course Selection</h2>
+        <label for="course-name">Course Name:</label>
+        <input type="text" id="course-name" name="course-name" placeholder="Enter course name">
+
+        <label for="course-provider">Course Provider:</label>
+        <input type="text" id="course-provider" name="course-provider" placeholder="Enter course provider">
+
+        <label for="course-dates">Course Dates:</label>
+        <input type="text" id="course-dates" name="course-dates" placeholder="Enter course dates">
+    </div>
+
+    <div class="section">
+        <h2>Notify Employee</h2>
+        <label for="notification-date">Notification Date:</label>
+        <input type="date" id="notification-date" name="notification-date">
+
+        <label for="notification-method">Notification Method:</label>
+        <input type="text" id="notification-method" name="notification-method" placeholder="Enter notification method">
+
+        <label for="notification-details">Notification Details:</label>
+        <textarea id="notification-details" name="notification-details" placeholder="Enter notification details"></textarea>
+    </div>
+</body>
+</html>

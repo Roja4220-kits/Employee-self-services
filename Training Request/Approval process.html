@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approval Process</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            display: block;
+            margin: 5px 0 10px;
+            padding: 8px;
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <h1>Approval Process</h1>
+
+    <div class="section">
+        <h2>Employee Information</h2>
+        <label for="employee-name">Employee Name:</label>
+        <input type="text" id="employee-name" name="employee-name" placeholder="Enter employee name">
+
+        <label for="employee-id">Employee ID:</label>
+        <input type="text" id="employee-id" name="employee-id" placeholder="Enter employee ID">
+
+        <label for="job-title">Job Title:</label>
+        <input type="text" id="job-title" name="job-title" placeholder="Enter job title">
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" placeholder="Enter department">
+    </div>
+
+    <div class="section">
+        <h2>Training Coordinator Assignment</h2>
+        <label for="coordinator-name">Coordinator Name:</label>
+        <input type="text" id="coordinator-name" name="coordinator-name" placeholder="Enter coordinator name">
+
+        <label for="assignment-date">Assignment Date:</label>
+        <input type="date" id="assignment-date" name="assignment-date">
+    </div>
+
+    <div class="section">
+        <h2>HR Approval</h2>
+        <label for="hr-representative">HR Representative:</label>
+        <input type="text" id="hr-representative" name="hr-representative" placeholder="Enter HR representative name">
+
+        <label for="approval-status">Approval Status:</label>
+        <select id="approval-status" name="approval-status">
+            <option value="approved">Approved</option>
+            <option value="not-approved">Not Approved</option>
+        </select>
+
+        <label for="approval-date">Date:</label>
+        <input type="date" id="approval-date" name="approval-date">
+    </div>
+
+    <div class="section">
+        <h2>Training Schedule Confirmation</h2>
+        <label for="training-date">Training Date:</label>
+        <input type="date" id="training-date" name="training-date">
+
+        <label for="training-time">Training Time:</label>
+        <input type="time" id="training-time" name="training-time">
+
+        <label for="training-location">Training Location:</label>
+        <input type="text" id="training-location" name="training-location" placeholder="Enter training location">
+    </div>
+
+    <div class="section">
+        <h2>Notify Trainer</h2>
+        <label for="trainer-name">Trainer Name:</label>
+        <input type="text" id="trainer-name" name="trainer-name" placeholder="Enter trainer name">
+
+        <label for="notification-date">Notification Date:</label>
+        <input type="date" id="notification-date" name="notification-date">
+
+        <label for="notification-method">Notification Method:</label>
+        <input type="text" id="notification-method" name="notification-method" placeholder="Enter notification method">
+
+        <label for="training-details">Training Details:</label>
+        <textarea id="training-details" name="training-details" placeholder="Enter training details"></textarea>
+    </div>
+</body>
+</html>

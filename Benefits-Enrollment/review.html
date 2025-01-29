@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Benefit Package Selection</title>
+    <style>
+        h1 {
+            color: blue; /* Change the heading font color to blue */
+        }
+    </style>
+</head>
+
+<body>
+     <h1>Review Submitted Information</h1>
+    <div id="review-data"></div>
+
+    <script>
+        // Parse query parameters and display the submitted data
+        const params = new URLSearchParams(window.location.search);
+        let reviewContent = "<ul>";
+
+        params.forEach((value, key) => {
+            reviewContent += `<li><strong>${key.replace(/([A-Z])/g, ' $1').toUpperCase()}:</strong> ${value}</li>`;
+        });
+
+        reviewContent += "</ul>";
+        document.getElementById('review-data').innerHTML = reviewContent;
+    </script>
+</body>
+</html>

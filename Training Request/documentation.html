@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            display: block;
+            margin: 5px 0 10px;
+            padding: 8px;
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <h1>Documentation</h1>
+
+    <div class="section">
+        <h2>Employee Information</h2>
+        <label for="employee-name">Employee Name:</label>
+        <input type="text" id="employee-name" name="employee-name" placeholder="Enter employee name">
+
+        <label for="employee-id">Employee ID:</label>
+        <input type="text" id="employee-id" name="employee-id" placeholder="Enter employee ID">
+
+        <label for="job-title">Job Title:</label>
+        <input type="text" id="job-title" name="job-title" placeholder="Enter job title">
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" placeholder="Enter department">
+    </div>
+
+    <div class="section">
+        <h2>Training Details</h2>
+        <label for="course-name">Course Name:</label>
+        <input type="text" id="course-name" name="course-name" placeholder="Enter course name">
+
+        <label for="course-dates">Course Dates:</label>
+        <input type="text" id="course-dates" name="course-dates" placeholder="Enter course dates">
+
+        <label for="training-hours">Training Hours:</label>
+        <input type="number" id="training-hours" name="training-hours" placeholder="Enter training hours">
+    </div>
+
+    <div class="section">
+        <h2>Training Evaluation</h2>
+        <label for="evaluation-results">Evaluation Results:</label>
+        <textarea id="evaluation-results" name="evaluation-results" placeholder="Enter evaluation results"></textarea>
+
+        <label for="strengths">Strengths:</label>
+        <textarea id="strengths" name="strengths" placeholder="Enter identified strengths"></textarea>
+
+        <label for="areas-for-improvement">Areas for Improvement:</label>
+        <textarea id="areas-for-improvement" name="areas-for-improvement" placeholder="Enter identified areas"></textarea>
+    </div>
+
+    <div class="section">
+        <h2>Manager Feedback</h2>
+        <label for="manager-name">Manager Name:</label>
+        <input type="text" id="manager-name" name="manager-name" placeholder="Enter manager name">
+
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" placeholder="Enter feedback comments"></textarea>
+
+        <label for="feedback-date">Date:</label>
+        <input type="date" id="feedback-date" name="feedback-date">
+    </div>
+
+    <div class="section">
+        <h2>Notify HR</h2>
+        <label for="hr-representative">HR Representative:</label>
+        <input type="text" id="hr-representative" name="hr-representative" placeholder="Enter HR representative name">
+
+        <label for="notification-date">Notification Date:</label>
+        <input type="date" id="notification-date" name="notification-date">
+
+        <label for="notification-method">Notification Method:</label>
+        <input type="text" id="notification-method" name="notification-method" placeholder="Enter notification method">
+    </div>
+</body>
+</html>

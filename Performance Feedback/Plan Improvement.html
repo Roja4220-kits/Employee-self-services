@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improvement Plan Development</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .signature-box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-top: 10px;
+            width: 100%;
+        }
+        .signature-box input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        .signature-box span {
+            font-weight: bold;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Improvement Plan Development</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Employee Information</h2>
+            <div class="form-group">
+                <label for="employeeName">Employee Name</label>
+                <input type="text" id="employeeName" name="employeeName" placeholder="Employee Name" disabled>
+            </div>
+            <div class="form-group">
+                <label for="employeeId">Employee ID</label>
+                <input type="text" id="employeeId" name="employeeId" placeholder="Employee ID" disabled>
+            </div>
+            <div class="form-group">
+                <label for="jobTitle">Job Title</label>
+                <input type="text" id="jobTitle" name="jobTitle" placeholder="Job Title" disabled>
+            </div>
+            <div class="form-group">
+                <label for="department">Department</label>
+                <input type="text" id="department" name="department" placeholder="Department" disabled>
+            </div>
+        </section>
+
+        <section>
+            <h2>Improvement Plan Development</h2>
+            <h3>Areas for Improvement</h3>
+            <ul>
+                <li>Specific area 1</li>
+                <li>Specific area 2</li>
+                <li>Specific area 3</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>SMART Goals</h3>
+            <ul>
+                <li>Goal 1: [Specific, Measurable, Achievable, Relevant, Time-bound goal]</li>
+                <li>Goal 2: [Specific, Measurable, Achievable, Relevant, Time-bound goal]</li>
+                <li>Goal 3: [Specific, Measurable, Achievable, Relevant, Time-bound goal]</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Action Plan</h3>
+            <ul>
+                <li>Step 1: [Specific action]</li>
+                <li>Step 2: [Specific action]</li>
+                <li>Step 3: [Specific action]</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Timeline</h3>
+            <div class="form-group">
+                <label for="startDate">Start Date</label>
+                <input type="date" id="startDate" name="startDate">
+            </div>
+            <div class="form-group">
+                <label for="endDate">End Date</label>
+                <input type="date" id="endDate" name="endDate">
+            </div>
+            <div class="form-group">
+                <label for="checkinDates">Check-in Dates</label>
+                <input type="text" id="checkinDates" name="checkinDates" placeholder="Enter check-in dates (comma separated)">
+            </div>
+        </section>
+
+        <section>
+            <h3>Agree on Improvement Plan</h3>
+            <div class="signature-box">
+                <span>Employee Signature:</span>
+                <input type="text" id="employeeSignature" name="employeeSignature" placeholder="Employee's signature">
+            </div>
+            <div class="form-group">
+                <label for="agreementDate">Date</label>
+                <input type="date" id="agreementDate" name="agreementDate">
+            </div>
+        </section>
+
+        <section>
+            <h3>Approve Improvement Plan</h3>
+            <div class="signature-box">
+                <span>Supervisor Signature:</span>
+                <input type="text" id="supervisorSignature" name="supervisorSignature" placeholder="Supervisor's signature">
+            </div>
+            <div class="form-group">
+                <label for="approvalDate">Date</label>
+                <input type="date" id="approvalDate" name="approvalDate">
+            </div>
+        </section>
+
+        <section>
+            <h3>Notify Improvement Plan</h3>
+            <div class="form-group">
+                <label for="notificationDate">Notification Date</label>
+                <input type="date" id="notificationDate" name="notificationDate">
+            </div>
+            <div class="form-group">
+                <label for="notificationMethod">Notification Method</label>
+                <input type="text" id="notificationMethod" name="notificationMethod" placeholder="Email, Meeting, etc.">
+            </div>
+        </section>
+
+        <section>
+            <h3>Monitor Progress</h3>
+            <div class="form-group">
+                <label for="progressUpdates">Progress Updates</label>
+                <input type="text" id="progressUpdates" name="progressUpdates" placeholder="Frequency of updates (e.g., weekly)">
+            </div>
+            <div class="form-group">
+                <label for="progressMetrics">Progress Metrics</label>
+                <input type="text" id="progressMetrics" name="progressMetrics" placeholder="e.g., project milestones, performance scores">
+            </div>
+            <div class="form-group">
+                <label for="nextReviewDate">Next Review Date</label>
+                <input type="date" id="nextReviewDate" name="nextReviewDate">
+            </div>
+        </section>
+
+        <button type="submit">Submit Improvement Plan</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Performance Feedback System</p>
+    </footer>
+
+</body>
+</html>
